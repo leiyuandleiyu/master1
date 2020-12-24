@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "begin-bird",
+  "_name": "begin_bird",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.35,
@@ -42,11 +42,11 @@
       "y": [
         {
           "frame": 0,
-          "value": 153.792
+          "value": -103.254
         },
         {
           "frame": 0.3333333333333333,
-          "value": 168.341
+          "value": -95.47
         }
       ]
     }
