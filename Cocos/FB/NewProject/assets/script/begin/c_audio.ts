@@ -7,7 +7,7 @@ export default class c_audio extends cc.Component {
      @property(cc.AudioClip)bgmmusic:cc.AudioClip = null;
      @property(cc.AudioClip)begin:cc.AudioClip = null;
      @property(cc.AudioClip)score:cc.AudioClip = null;
-     @property(cc.AudioClip)buton:cc.AudioClip = null;
+     @property(cc.AudioClip)button:cc.AudioClip = null;
      @property(cc.AudioClip)collide:cc.AudioClip = null;
      @property(cc.AudioClip)wing:cc.AudioClip = null;
 
@@ -22,7 +22,7 @@ export default class c_audio extends cc.Component {
          this.id = {
              begin:{clip:this.begin,id:-1},
              score:{clip:this.score,id:-1},
-             buton:{clip:this.buton,id:-1},
+             button:{clip:this.button,id:-1},
              collide:{clip:this.collide,id:-1},
              wing:{clip:this.wing,id:-1}
 
@@ -47,7 +47,7 @@ export default class c_audio extends cc.Component {
     }
     //播放声效
     playSound(nam:string){
-       this.id[nam] ["id"] = cc.audioEngine.play(this.id[nam] ["clip"] as any,false,1);
+       this.id[nam]["id"] = cc.audioEngine.play(this.id[nam]["clip"],false,1);
     }
     //停止音效
     stopSound(nam:string){
