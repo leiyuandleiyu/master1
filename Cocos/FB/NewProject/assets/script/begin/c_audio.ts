@@ -52,7 +52,7 @@ export default class c_audio extends cc.Component {
     //停止音效
     stopSound(nam:string){
         //找到id
-     let _id = this.id[nam] ["id"];
+     let _id = this.id[nam]["id"];
        //获得状态
        let state = cc.audioEngine.getState(_id);
        if(state == cc.audioEngine.AudioState.PLAYING){
