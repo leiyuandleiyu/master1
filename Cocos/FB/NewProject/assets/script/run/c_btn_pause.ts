@@ -35,7 +35,7 @@ onToggle(){
     }else{//暂停中
         c_event.ins.gameResume();
     }
-  
+    c_audio.ins.playSound("button");
 }
 //销毁
 onDestroy(){
