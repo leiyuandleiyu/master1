@@ -9,7 +9,6 @@ export default class c_btn_play extends cc.Component {
           this.node.on("click",this.onClick,this);
       }
   onClick(){
-    console.debug('-----------onClick------12-------')
     c_audio.ins.playSound("button");
     cc.director.loadScene("s_run");
   } 

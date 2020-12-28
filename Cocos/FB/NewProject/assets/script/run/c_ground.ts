@@ -26,7 +26,7 @@ export default class NewClass extends cc.Component {
         this.pause = false;
     }
     on_gamePause(){
-        this.pause = false;
+        this.pause = true;
     }
     on_gameResume(){
         this.pause = false;
