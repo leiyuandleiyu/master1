@@ -18,12 +18,12 @@ export default class c_event extends cc.Component {
         this.node.emit("gameBegin");
     }
     //暂停游戏
-    gemePause(){
-        this.node.emit("gemePause");
+    gamePause(){
+        this.node.emit("gamePause");
     }
     //恢复游戏
-    gameResme(){
-        this.node.emit("gameResme");
+    gameResume(){
+        this.node.emit("gameResume");
     }
     //玩家死亡
     gameDie(){

@@ -15,18 +15,20 @@ export default class NewClass extends cc.Component {
         this.inPx = this.node.x;
         this.dx = c_event.ins.flyVx;
         c_event.ins.node.on("gameBegin",this.on_gameBegin,this);
-        c_event.ins.node.on("gemePause",this.on_gemePause,this);
-        c_event.ins.node.on("gameResme",this.on_gameResme,this);
+        c_event.ins.node.on("gamePause",this.on_gamePause,this);
+        c_event.ins.node.on("gameResume",this.on_gameResume,this);
         c_event.ins.node.on("gameDie",this.on_gameDie,this);
+    }
+    start(){
         c_event.ins.gameBegin();
     }
     on_gameBegin(){
         this.pause = false;
     }
-    on_gemePause(){
+    on_gamePause(){
         this.pause = false;
     }
-    on_gameResme(){
+    on_gameResume(){
         this.pause = false;
     }
     on_gameDie(){
@@ -43,8 +45,8 @@ export default class NewClass extends cc.Component {
     }
     onDestroy(){
         c_event.ins.node.off("gameBegin",this.on_gameBegin,this);
-        c_event.ins.node.off("gemePause",this.on_gemePause,this);
-        c_event.ins.node.off("gameResme",this.on_gameResme,this);
+        c_event.ins.node.off("gamePause",this.on_gamePause,this);
+        c_event.ins.node.off("gameResume",this.on_gameResume,this);
         c_event.ins.node.off("gameDie",this.on_gameDie,this);
     }
 }
