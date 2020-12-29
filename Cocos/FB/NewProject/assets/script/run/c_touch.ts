@@ -15,7 +15,6 @@ export default class c_touch extends cc.Component {
     on_touch(){
         c_event.ins.fly();
         c_audio.ins.playSound("wing");
-        console.log("999999999");
     }
     on(){
         this.node.on(cc.Node.EventType.TOUCH_START,this.on_touch,this);

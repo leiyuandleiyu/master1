@@ -19,9 +19,6 @@ export default class NewClass extends cc.Component {
         c_event.ins.node.on("gameResume",this.on_gameResume,this);
         c_event.ins.node.on("gameDie",this.on_gameDie,this);
     }
-    start(){
-        c_event.ins.gameBegin();
-    }
     on_gameBegin(){
         this.pause = false;
     }

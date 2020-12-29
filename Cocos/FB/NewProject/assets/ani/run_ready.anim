@@ -1,0 +1,72 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "run_ready",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.25,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.01,
+            "y": 0.01
+          },
+          "curve": [
+            0.14727443609022559,
+            0.3822368421052631,
+            0.7982570061517431,
+            1.4379955570745044
+          ]
+        },
+        {
+          "frame": 1,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 1.25,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 4,
+            "y": 4
+          }
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 1,
+          "value": 255
+        },
+        {
+          "frame": 1.25,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 1,
+      "func": "sound",
+      "params": []
+    },
+    {
+      "frame": 1.25,
+      "func": "aniEnd",
+      "params": []
+    }
+  ]
+}

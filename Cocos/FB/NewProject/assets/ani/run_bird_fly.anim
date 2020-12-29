@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "run_bird_fly",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.35,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "f6241db4-d24e-414d-a1ba-872097897c24"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "6cdb442f-68ba-4632-ae33-f6f654e23c6e"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "3ddb74c5-94f3-4baf-afe8-6e77cad5dd49"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "6cdb442f-68ba-4632-ae33-f6f654e23c6e"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "f6241db4-d24e-414d-a1ba-872097897c24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

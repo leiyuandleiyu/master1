@@ -13,7 +13,7 @@ onLoad(){
     c_event.ins.node.on("gameBegin",this.use,this);//游戏正式开始事件
     c_event.ins.node.on("gameDie",this.hid,this);//玩家死亡事件 
      this.toggle = this.getComponent(cc.Toggle);
-    // this.hid();
+    this.hid();
 }
 //启动
 use(){
