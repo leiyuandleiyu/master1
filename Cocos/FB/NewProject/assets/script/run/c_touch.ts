@@ -1,3 +1,4 @@
+import c_audio from "../begin/c_audio";
 import c_event from "../begin/c_event";
 
 const {ccclass, property} = cc._decorator;
@@ -13,6 +14,8 @@ export default class c_touch extends cc.Component {
 //手指点击屏幕
     on_touch(){
         c_event.ins.fly();
+        c_audio.ins.playSound("wing");
+        console.log("999999999");
     }
     on(){
         this.node.on(cc.Node.EventType.TOUCH_START,this.on_touch,this);
