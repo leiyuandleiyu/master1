@@ -3,7 +3,7 @@ import c_event from "../begin/c_event";
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class c_ground extends cc.Component {
     private wid:number;//地面素材的宽度
     private inPx:number;//x的初始位置
     private dx:number = 0;//每帧移动的x距离

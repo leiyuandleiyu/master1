@@ -14,7 +14,6 @@ export default class c_touch extends cc.Component {
 //手指点击屏幕
     on_touch(){
         c_event.ins.fly();
-        c_audio.ins.playSound("wing");
     }
     on(){
         this.node.on(cc.Node.EventType.TOUCH_START,this.on_touch,this);

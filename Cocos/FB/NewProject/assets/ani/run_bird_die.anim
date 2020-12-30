@@ -27,5 +27,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 1.8333333333333333,
+      "func": "dieOver",
+      "params": []
+    }
+  ]
 }

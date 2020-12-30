@@ -6,7 +6,7 @@ const {ccclass, property} = cc._decorator;
 enum state{ready,fly,pause,die};
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class c_bird extends cc.Component {
     private pause:boolean = true;//是否暂停
     private g:number = 0.15;//重力加速度
     private vy:number = 0;//当前y速度
@@ -20,6 +20,21 @@ export default class NewClass extends cc.Component {
         c_event.ins.node.on("gamePause",this.on_gamePause,this); 
         c_event.ins.node.on("gameResume",this.on_gameResume,this);
         c_event.ins.node.on("fly",this.on_fly,this);
+    }
+    //进入碰撞
+    onCollisionEnter(other,self){
+        if(this.sta == state.fly){
+            if(other.tag == 1){
+                this.sta = state.die;
+                c_audio.ins.playSound("collide");
+                this.ani.play("run_bird_die");
+                c_event.ins.gameDie();
+            }
+        }
+    }
+    //离开碰撞
+    onCollisionExit(other,self){
+
     }
     on_gameBegin(){
         this.sta = state.fly;
@@ -40,6 +55,10 @@ export default class NewClass extends cc.Component {
             this.ani.play("run_bird_fly");
             c_audio.ins.playSound("wing");
         }
+    }
+    //死亡结束
+    dieOver(){
+        c_event.ins.gameDieOver();
     }
     update(){
         if(this.sta == state.fly){

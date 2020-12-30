@@ -31,7 +31,7 @@ export default class c_event extends cc.Component {
     }
     //死亡结束
     gameDieOver(){
-        cc.director.loadScene("s_voer");
+        cc.director.loadScene("s_over");
     }
     //小鸟煽动翅膀
     fly(){
