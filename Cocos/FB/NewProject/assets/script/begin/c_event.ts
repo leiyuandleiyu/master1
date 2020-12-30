@@ -36,8 +36,6 @@ export default class c_event extends cc.Component {
     //小鸟煽动翅膀
     fly(){
         this.node.emit("fly");
-        console.log("加分");
-        this.addScore(1);
     }
     //得分
     addScore(n:number){

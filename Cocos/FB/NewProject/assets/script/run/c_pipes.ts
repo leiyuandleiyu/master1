@@ -46,7 +46,7 @@ export default class c_pipes extends cc.Component {
     }
     //对象池初始化
     pool_ini(){
-        this..pool = new cc.NodePool();
+        this.pool = new cc.NodePool();
         for(let i = 0;i < 3;i++){
             let pipe:cc.Node = cc.instantiate(this.pre_pipes);
             this.pool.put(pipe);
@@ -72,10 +72,10 @@ export default class c_pipes extends cc.Component {
         let pipe:cc.Node = this.pool_get();
         //设置管道的位置
         let px:number = cc.Canvas.instance.node.width / 2 + pipe.width;
-        let py:number = cc.randomRange(-1,1)*this.p_y;
+        let py:number = (Math.random()*2 -1)*this.p_y;
         pipe.setPosition(px,py);
         pipe.getChildByName("up").y = this.dis_y/2;
-        pipe.getChildByName("down").y = this.dis_y/2;
+        pipe.getChildByName("down").y =-this.dis_y/2;
         //放进舞台
         this.node.addChild(pipe);
         //把管道放进数组

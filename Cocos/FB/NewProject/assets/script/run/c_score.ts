@@ -22,8 +22,6 @@ export default class c_score extends cc.Component {
 
     }
     addScore(e){
-        console.log('-----------addScore----24----------');
-        console.log(e);
         this.label.string = e.toLocaleString();
         this.ani.play("run_score");
     }

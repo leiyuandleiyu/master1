@@ -192,7 +192,7 @@
       "array": [
         0,
         0,
-        338.8892747662587,
+        340.3401699176797,
         0,
         0,
         0,
@@ -213,7 +213,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "7dh0P6fOdCaLBhNoWj38B+"
+    "_id": "b1FnDLOtNIcaWmFvhllX1R"
   },
   {
     "__type__": "cc.Camera",
@@ -249,7 +249,7 @@
     },
     "_renderStages": 1,
     "_alignWithScreen": true,
-    "_id": "f8bOWTo5RDnYBREbP6BCTF"
+    "_id": "abT7Mh7+tNJahCKJ9J2Nvf"
   },
   {
     "__type__": "cc.Node",
