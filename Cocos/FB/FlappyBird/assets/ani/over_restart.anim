@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "over_restart",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -290.605,
+          "curve": [
+            0.0075353218210361134,
+            0.9429094714809,
+            0.8485609628466773,
+            1.408120450977594
+          ]
+        },
+        {
+          "frame": 0.5,
+          "value": -71.205
+        }
+      ]
+    }
+  },
+  "events": []
+}
