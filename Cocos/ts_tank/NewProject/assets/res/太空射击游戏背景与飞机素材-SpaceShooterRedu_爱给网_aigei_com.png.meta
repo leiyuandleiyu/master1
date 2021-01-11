@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "8f309342-754d-4280-a2bb-8627d8965a87",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 256,
+  "platformSettings": {},
+  "subMetas": {
+    "太空射击游戏背景与飞机素材-SpaceShooterRedu_爱给网_aigei_com": {
+      "ver": "1.0.4",
+      "uuid": "d29e05a4-3318-4c20-919a-654a5716d357",
+      "rawTextureUuid": "8f309342-754d-4280-a2bb-8627d8965a87",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 256,
+      "rawWidth": 256,
+      "rawHeight": 256,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

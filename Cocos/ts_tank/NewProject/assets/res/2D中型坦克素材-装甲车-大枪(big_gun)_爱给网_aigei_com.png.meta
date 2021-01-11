@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "835f0e4a-a34e-4f40-8b11-05f498cbdae8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 52,
+  "height": 66,
+  "platformSettings": {},
+  "subMetas": {
+    "2D中型坦克素材-装甲车-大枪(big_gun)_爱给网_aigei_com": {
+      "ver": "1.0.4",
+      "uuid": "7ff2ff90-1861-4a5a-a8a9-493dd5046a14",
+      "rawTextureUuid": "835f0e4a-a34e-4f40-8b11-05f498cbdae8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 48,
+      "height": 63,
+      "rawWidth": 52,
+      "rawHeight": 66,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
