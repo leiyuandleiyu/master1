@@ -13,6 +13,7 @@ export default class joystick extends cc.Component {
 
     @property
     min_R: number = 20;
+     public dir : cc.Vec2 = cc.v2(0,0);
     onLoad(){
         this.stick.setPosition(cc.v2(0,0));
         this.stick.on(cc.Node.EventType.TOUCH_MOVE,this.on_stick_move,this);
@@ -33,6 +34,8 @@ export default class joystick extends cc.Component {
             this.stick.setPosition(pos);
             return;
         }
+        this.dir.x = pos.x / len;//(cos)
+        this.dir.y = pos.y / len;//(sin)
         if(len > this.max_R){
             pos.x = pos.x * this.max_R / len;
             pos.y = pos.y * this.max_R / len;
@@ -40,6 +43,7 @@ export default class joystick extends cc.Component {
         this.stick.setPosition(pos);
     }
     on_stick_end():void{
+        this.dir = cc.v2(0,0);
         this.stick.setPosition(cc.v2(0,0));
     }
 
